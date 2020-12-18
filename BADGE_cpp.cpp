@@ -9,6 +9,22 @@
 #include "LogDetTriDiag.hpp"
 #include "progressbar.hpp"
 
+/*
+ * INPUTS:
+ * data             N x P matrix of observed data. N is the sample size and P is the dimension.
+ * normalize data   boolean value to determine whether to normalize the data to have unit variance across time (true by default). 
+ * anneal_iters     number of iterations for asymtotic simulated annealing (500 by default)
+ * T                annealing temperature at the start of the algorithm (inf by default)
+ * max_iter         maximum number of iterations (1e4 by default).
+ * tol_relative     tolerance for the relative difference between the estimated precision matrices in two consecutive iterations to check the convergence (1e-2 by default)
+ * tol_s            tolerance for the maximum absolute difference between the expected state values in two consecutive iterations to check the convergence of the algorithm (1e-1 by default).
+ * OUTPUS:
+ * EKd_mat          N x P matrix of the diagonal of the inverse spectral density matrices at N time points.
+ * EKod_mat         N x P(P-1)/2 matrix of the vectorized lower-triangular parts of the inverse spectral density matrices at N time points
+ * EJ_mat           N x P(P-1)/2 matrix of the expectation of the vectorized lower-triangular parts of the J matrices at N time points
+ * Es_mat           N x P(P-1)/2 matrix of the expecation of the vectorized lower-triangular parts of the s matrices at N time points
+ * run_time         overall run time
+*/
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]){
     // read data from MATLAB
