@@ -47,6 +47,6 @@ Please refer to main.m for an example of how to call BADGE to analyze a syntheti
 For more details of how to manipulate the BADGE function. Please refer to the comments in BADGE_cpp.cpp.
 
 
-[1] H. Yu and J. Dauwels, Efficient Variational Bayesian Structure Learning of Dynamic Graphical Models. arXiv preprint arXiv:2009.07703, 2020.
+[1] H. Yu, S. Wu and J. Dauwels, Efficient Variational Bayes Learning of Graphical Models With Smooth Structural Changes, IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, pp. 475 - 488, 2023.
 
 [2] C. Sanderson, R. Curtin. Armadillo: a template-based C++ library for linear algebra. Journal of Open Source Software, 2016.
