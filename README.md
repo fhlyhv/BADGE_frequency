@@ -1,5 +1,5 @@
-# BADGE (frequency domain)
-This matlab toolbox implements the BADGE algorithm for learning graphical models from multivariate stationary time series in frequency domain. Please refer to [1] for more details of the algorithm.
+# BASS (frequency domain)
+This matlab toolbox implements the BASS algorithm (formally named BADGE) for learning graphical models from multivariate stationary time series in frequency domain. Please refer to [1] for more details of the algorithm.
 
 The R package for learning time-varying graphical models in the time domain can be found at https://github.com/fhlyhv/BADGE.
 
